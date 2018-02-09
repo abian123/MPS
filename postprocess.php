@@ -8,16 +8,12 @@
 <body>
 <?php
 $to = "andrew.g.bian@gmail.com";
-$nameSubmitted = $_POST['name'];
-$message = $_POST['message'];
+$emailAdd = $_POST['email'];
+$nameSubmitted = $_Post['name'];
 
-$headers =  'MIME-Version: 1.0' . "\r\n";
-$headers .= 'From: Your name <info@address.com>' . "\r\n";
-$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+$message = $_Post['message'];
 
-mail($to, $subject, $body, $headers);
-
-mail($to, $nameSubmitted, $message, $From);
+mail($to,$nameSubmitted,$message, $emailAdd);
 
 ?>
 </body>
