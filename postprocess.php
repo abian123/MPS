@@ -9,9 +9,9 @@
 <?php
 $to = "andrew.g.bian@gmail.com";
 $emailAdd = $_POST['email'];
-$nameSubmitted = $_Post['name'];
+$nameSubmitted = $_POST['name'];
 
-$message = $_Post['message'];
+$message = $_POST['message'];
 
 mail($to,$nameSubmitted,$message, $emailAdd);
 
