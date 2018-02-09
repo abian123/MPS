@@ -8,8 +8,6 @@
 <body>
     
 <?php
-require 'PHPMailerAutoload.php';
-$mail = new PHPMailer;
 
 $to = "andrew.g.bian@gmail.com";
 $emailAdd = $_POST['email'];
